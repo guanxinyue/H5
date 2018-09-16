@@ -1,0 +1,12 @@
+*{
+	width: 600px;
+	margin: 0 auto;
+}
+.xin{
+	color:red;
+}
+.biaoti{
+	font-family: '黑体' ;
+	font-size: 40px;
+	font-weight:bolder;
+}
