@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <script language="javascript" type="text/javascript">
+		window.onload=function(){
+			var play=document.getElementById('play');
+			var muted=document.getElementById('muted');
+			var bgm=document.getElementById('audio');
+			play.onclick=function(){
+				if(bgm.paused){
+					bgm.play();
+					play.value="暂停";
+				}else{
+					bgm.pause();
+	        		play.value="继续";
+				}
+			}
+			muted.onclick=function(){
+				if(bgm.paused){
+					return;
+				}else{
+					if(bgm.muted){
+						bgm.muted = false;
+						mute.value="扩音";
+					}else{
+						bgm.muted = true;
+						mute.value="静音";
+					}
+				}
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<audio id="audio" controls="controls">
+    <source src="a.mp3" type="audio/mp3">
+	</audio>
+	<br />
+	<input type="button" value="开始播放" id="play">
+	<input type="button" value="静音" id="muted">
+	
+</body>
+</html>
