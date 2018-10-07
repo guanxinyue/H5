@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>拖放本地图片到网页中</title>
+    <style>
+    #outside{
+        margin: 0 auto;
+        width: 300px;
+    }
+    h1{
+    	font-size:24px;
+    	font-family: "微软雅黑";
+    }
+ 	#img {
+    	width: 300px;
+    	height: 300px;
+        border: 2px solid silver;
+    }
+    #img img{
+    	margin: 10px;
+    	width: 280px;
+    	height: 280px;
+    }
+    </style>
+</head>
+<body>
+	<div id=outside>
+		<h1>上传头像</h1>
+    	<div id="img"></div>
+    	<div id="target"></div>
+    </div>
+</body>
+<script language="JavaScript">
+ 	
+	window.onload = function() {
+   		var img = document.getElementById("img");
+		var tar = document.getElementById("target");
+		
+		img.ondragover = function(e) {
+        	e.preventDefault();
+    	}
+		
+    	img.ondrop = function(e) { 
+        	e.preventDefault();
+        	var file = e.dataTransfer.files[0];
+        	var reader = new FileReader();
+			reader.readAsDataURL(file);
+			console.log(e);
+			
+        	reader.onload = function(e) {
+ 				img.innerHTML = "<img src=\"" + reader.result + "\"/>";
+        }
+    }
+ 
+ 
+ 
+}
+ 
+ 
+</script>
+</html>
