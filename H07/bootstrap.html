@@ -1,0 +1,178 @@
+<html>
+	<head>
+	<title>响应式网页</title>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    </style>
+  </head>
+  <body>
+  		 <div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top " > 
+			<div class="collapse navbar-collapse" id="bs-1">
+			    <ul class="nav navbar-nav">
+			      <li ><a href="#"><span class="glyphicon  glyphicon-bell"></span> Brand</a></li>
+			      <li class="active"><a href="#">Link1</a></li>
+			      <li><a href="#">Link2</a></li>
+			      <li><a href="#">Link3</a></li>
+			      <li><a href="#">Link4</a></li>    
+			    </ul>   
+			  </div>
+		</nav>	
+		
+  <!-- 轮播 -->
+  <div id="generic" class="carousel slide" data-ride="carousel">
+  	
+    <ol class="carousel-indicators">
+      <li data-target="#generic" data-slide-to="0" class="active"></li>
+      <li data-target="#generic" data-slide-to="1"></li>
+      <li data-target="#generic" data-slide-to="2"></li>
+    </ol>
+     <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner" >
+      <div class="item active">
+        <img alt="First slide" src="images/banner.jpg" >
+      </div>
+      <div class="item">
+        <img alt="Second slide" src="images/banner.jpg" >
+      </div>
+      <div class="item">
+        <img alt="Third slide" src="images/banner.jpg"  >
+      </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="left carousel-control" href="#generic" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#generic" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+  <table class="table table-striped">
+				
+				<tbody>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>first</th>
+						<th>second</th>
+						<th>third</th>
+						<th>forth</th>
+						<th>fifth</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>1</td>
+					<td>penatibus et magnis</td>
+					<td>what</td>
+					<td>messages</td>
+					<td>56</td>
+					<td><button class="btn btn-success">提交</button></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>penatibus et </td>
+					<td>you</td>
+					<td>information</td>
+					<td>44</td>
+					<td><button class="btn btn-success">提交</button></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>nullanon </td>
+					<td>test</td>
+					<td>testing</td>
+					<td>32</td>
+					<td><button class="btn btn-success">提交</button></td>
+				</tr>
+				
+			</tbody>
+			</table>
+	<!--媒体-->
+	<div class="row">
+		    <div class="col-sm-6">
+			    <a href="#" class="thumbnail">
+		          <img src="images/pic.jpg" alt="...">
+		        </a>
+		    </div>
+		    <div class="media col-sm-6">
+				<div class="media-body">
+					<h4 class="media-heading">多媒体标题</h4>
+					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					<p>Donec lacinia congue felis in faucibus.</p>
+					<p>Donec lacinia congue felis in faucibus.</p>
+					<p>Donec lacinia congue felis in faucibus.</p>
+				</div> 
+				<div class="media-right">
+				  <img class="media-object " src="images/1.jpg" height="70" width="110" alt="...">
+				</div>
+		  </div>
+	</div>
+	
+	<!--缩略图-->
+	<div class="rol">
+		<div class="col-md-6">
+			<span class="lead">Images Show</span>&nbsp;<span>Images</span>
+		</div>
+		<div class="col-md-6">
+			<span class="lead">User Login</span>&nbsp;<span>form</span>
+		</div>
+	</div>
+	
+	<div class="row">
+		
+		
+		<div class="col-md-2">
+			<a href="#" class="thumbnail">
+		        <img src="images/2.jpg" alt="...">
+		      </a>
+		      Cras sit amet nibh libero, in gravida nulla.
+		</div>
+		<div class="col-md-2">
+			<a href="#" class="thumbnail">
+		        <img src="images/3.jpg" alt="...">
+		      </a>
+		      Cras sit amet nibh libero, in gravida nulla.
+		</div>
+		<div class="col-md-2">
+			<a href="#" class="thumbnail">
+		        <img src="images/4.jpg" alt="...">
+		      </a>
+		      Cras sit amet nibh libero, in gravida nulla.
+		</div>
+			
+		<div class="col-md-5">
+			<form role="form">
+		  <div class="form-group">
+		    <label for="InputEmail1">Email</label>
+		    <input type="text" class="form-control " id="InputEmail1" width="100px" value="Email">
+		  </div>
+		  <div class="form-group">
+		    <label for="InputPassword1">Password</label>
+		    <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+		  </div>
+		  <div class="form-group">
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> blue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		      <input type="checkbox"> red
+		    </label>
+		  </div>
+		</form>
+		</div>
+		
+	</div>
+  		 </div>
+	<nav class="navbar navbar-inverse navbar-fixed-botton " > 
+			<span style="color: white;">网站地图</span>
+			<br />
+			<p style="color: white;">123@ <a href="#" style="color: blue;">www.xxos.com</a></p>
+		</nav>	
+	
+	
+    <script src="js/jquery.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
